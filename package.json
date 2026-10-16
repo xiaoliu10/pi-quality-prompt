@@ -27,7 +27,14 @@
     "@earendil-works/pi-coding-agent": "*"
   },
   "scripts": {
-    "test": "node --test test.mjs"
+    "test": "node --test test.mjs",
+    "release:npm": "npm publish"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@google/genai",
+      "protobufjs"
+    ]
   },
   "files": [
     "index.mjs",
