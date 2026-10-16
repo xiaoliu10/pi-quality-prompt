@@ -1,0 +1,6 @@
+# pnpm 11.1 的构建许可配置（与 pi-desktop 同款）：未列出的包触发
+# ERR_PNPM_IGNORED_BUILDS。@google/genai / protobufjs 的 build 脚本与本扩展
+# 无关（测试零依赖），显式置 false 静默跳过。
+allowBuilds:
+  '@google/genai': false
+  protobufjs: false

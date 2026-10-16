@@ -30,12 +30,6 @@
     "test": "node --test test.mjs",
     "release:npm": "npm publish"
   },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "@google/genai",
-      "protobufjs"
-    ]
-  },
   "files": [
     "index.mjs",
     "README.md",
