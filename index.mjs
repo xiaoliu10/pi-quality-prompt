@@ -44,6 +44,12 @@ export const QUALITY_GUIDELINES = [
   'Before deleting or overwriting, look at the target; confirm hard-to-reverse or outward-facing actions unless durably authorized.',
   // 安全（CC M19）
   "Don't introduce command injection, XSS, SQL injection, or other OWASP top-10 vulnerabilities; fix insecure code immediately.",
+  // 反 reward-hacking 专条（P1-3，2026-10-18）：arXiv 2503.11926 实证「改测试比真
+  // 实现更容易学」（"agents quickly learn that it is easier to modify the testing
+  // framework such that tests trivially pass rather than implement a genuine
+  // solution"）；Sonnet 4.5 系统卡 Table 6.1.A 量化 anti-hack prompt 把 hack rate
+  // 从 45%→10%、85%→54%。这是唯一有实测效果的门上层干预，独立成条。
+  'Never game a check: do not modify tests, skip them, weaken assertions, or change verification commands to make them pass; if a test seems wrong, say so and ask the user - changing the test to match the code is a failure, not a fix. A check that fails must lead to fixing the code, not the checker.',
   // 不过度自我纠正（CC 机制9/Corrections）
   "Correct only errors that change the user's code, conclusions, or decisions; state corrections plainly, no apologies or tallying past mistakes.",
 ];

@@ -1,7 +1,7 @@
 {
   "name": "@wengine-ai/pi-quality-prompt",
-  "version": "0.0.1",
-  "description": "Claude Code-grade quality discipline for pi coding agent — 14 additive promptGuidelines (prove-it-works, root-cause, scope discipline, anti-overengineering, conventions) reverse-engineered from Claude Code v2.1.300",
+  "version": "0.0.2",
+  "description": "Claude Code-grade quality discipline for pi coding agent \u2014 14 additive promptGuidelines (prove-it-works, root-cause, scope discipline, anti-overengineering, conventions) reverse-engineered from Claude Code v2.1.300",
   "keywords": [
     "pi",
     "pi-package",
